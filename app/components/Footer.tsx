@@ -6,7 +6,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/ilyasmoha1', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/ilyasmohamed', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/ilyasmoha', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/ilyasmohamed', label: 'Twitter' },
     { icon: Mail, href: 'mailto:contact@ilyasmohamed.com', label: 'Email' },
   ];
