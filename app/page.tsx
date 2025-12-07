@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="text-center md:text-left flex-1 md:pr-10">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
-              I'm <span className="text-blue-600 dark:text-blue-500">Ilyas Mohamed</span>
+              I'm <span className="text-primary-600 dark:text-primary-500">Ilyas Mohamed</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl animate-fade-up" style={{ animationDelay: '200ms' }}>
               Odoo Developer & Full-Stack Web Developer specializing in ERP systems, business automation, and modern web applications.
@@ -62,14 +62,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-up" style={{ animationDelay: '300ms' }}>
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors"
               >
                 View Projects
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md border border-primary-600 text-primary-600 hover:bg-primary-50 dark:text-primary-400 dark:border-primary-400 dark:hover:bg-primary-900/20 transition-colors"
               >
                 Get In Touch
               </Link>
@@ -79,7 +79,7 @@ export default function HomePage() {
             <img
               src="/images/hero-decor.png"
               alt="Illustration of web & ERP systems"
-              className="max-w-[420px] pointer-events-none animate-hero-float dark:opacity-80"
+              className="max-w-[420px] pointer-events-none animate-hero-float dark:opacity-80 rounded-full"
             />
           </div>
         </div>
@@ -96,13 +96,13 @@ export default function HomePage() {
                 className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-transform duration-300 ease-out hover:-translate-y-1 animate-fade-up"
                 style={{ animationDelay: `${(2 + index) * 100}ms` }}
               >
-                <skill.icon className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform" />
+                <skill.icon className="h-12 w-12 text-primary-600 dark:text-primary-400 mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-bold mb-4">{skill.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item) => (
                     <span
                       key={item}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 rounded-full text-sm"
+                      className="px-3 py-1 bg-primary-100 dark:bg-primary-900/40 text-primary-800 dark:text-primary-300 rounded-full text-sm"
                     >
                       {item}
                     </span>
@@ -119,7 +119,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-3xl font-bold">Featured Projects</h2>
-            <Link href="/projects" className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">
+            <Link href="/projects" className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium">
               View all projects →
             </Link>
           </div>
@@ -150,13 +150,13 @@ export default function HomePage() {
                   </div>
                   <div className="flex justify-between">
                     {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                         <Github className="h-5 w-5 mr-2" />
                         Code
                       </a>
                     )}
                     {project.live && (
-                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium">
                         Live Demo
                         <ExternalLink className="h-5 w-5 ml-2" />
                       </a>
@@ -174,31 +174,82 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <h3 className="text-2xl font-semibold text-center mb-6">Trusted by</h3>
           <p className="text-center text-sm text-gray-500 dark:text-gray-400 mb-8">Companies I’ve helped implement Odoo and web solutions.</p>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center">
-            {['customer-1', 'customer-2', 'customer-3', 'customer-4', 'customer-5', 'customer-6'].map((c, i) => (
-              <div key={c} className="flex items-center justify-center p-3 bg-white/60 dark:bg-neutral-800/50 rounded-md shadow-sm transform transition duration-300 hover:scale-105 hover:shadow-md border border-gray-100 dark:border-gray-800">
-                <img src={`/images/${c}.png`} alt={`Logo of ${c.replace('-', ' ')}`} className="max-h-12 object-contain dark:brightness-200 dark:grayscale pointer-events-none" />
-              </div>
-            ))}
+          <div className="group w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+            <div className="flex items-center justify-start md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-marquee group-hover:[animation-play-state:paused]">
+              <ul className="flex items-center justify-start md:justify-start [&_li]:mx-8 [&_img]:max-w-none">
+                {[
+                  '02 Mini Logo-01.png',
+                  'Header Logo-01.png',
+                  'LOGO-01.png',
+                  'logo (1).png',
+                  'Main Logo-01.png',
+                  'masjid cj.jpg',
+                  'Mini Logo-01.png',
+                  'Samira Soomaal Logo.jpg',
+                  'Tayo Restaurant.jpg',
+                  'Tusmo Logo-01.png'
+                ].map((logo) => (
+                  <li key={logo} className="mx-8">
+                    <div className="w-40 h-24 flex items-center justify-center bg-white dark:bg-neutral-800/50 rounded-lg shadow-sm border border-gray-100 dark:border-gray-800 p-4">
+                      <img
+                        src={`/clients/${logo}`}
+                        alt={`Client logo ${logo}`}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <ul className="flex items-center justify-start md:justify-start [&_li]:mx-8 [&_img]:max-w-none">
+                {[
+                  '02 Mini Logo-01.png',
+                  'Header Logo-01.png',
+                  'LOGO-01.png',
+                  'logo (1).png',
+                  'Main Logo-01.png',
+                  'masjid cj.jpg',
+                  'Mini Logo-01.png',
+                  'Samira Soomaal Logo.jpg',
+                  'Tayo Restaurant.jpg',
+                  'Tusmo Logo-01.png'
+                ].map((logo) => (
+                  <li key={`${logo}-duplicate`} className="mx-8">
+                    <div className="w-40 h-24 flex items-center justify-center bg-white dark:bg-neutral-800/50 rounded-lg shadow-sm border border-gray-100 dark:border-gray-800 p-4">
+                      <img
+                        src={`/clients/${logo}`}
+                        alt={`Client logo ${logo}`}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Build Intelligent Business Solutions
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Looking for Odoo implementation, custom development, or web application solutions?
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md bg-white text-blue-600 hover:bg-gray-100 transition-colors"
-          >
-            Start a Conversation
-          </Link>
+      <section className="py-16 px-4 bg-white dark:bg-gray-950 transition-colors">
+        <div className="max-w-6xl mx-auto rounded-3xl bg-gradient-to-r from-primary-800 to-primary-600 text-white px-6 py-16 md:px-12 md:py-20 text-center shadow-2xl relative overflow-hidden">
+          {/* Decorative shapes */}
+          <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+          <div className="relative z-10 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Let's Build Intelligent Business Solutions
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Looking for Odoo implementation, custom development, or web application solutions?
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-full bg-white text-primary-900 hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+            >
+              Start a Conversation
+            </Link>
+          </div>
         </div>
       </section>
     </div>
