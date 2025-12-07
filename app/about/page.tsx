@@ -5,36 +5,33 @@ export default function AboutPage() {
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-600 mb-6">
-          Hello! I'm Ilyas Mohamed, a passionate Full-Stack Developer specializing in modern web technologies.
+          I'm Ilyas Mohamed, an Odoo Developer and Full-Stack Web Developer passionate about building intelligent systems that help companies automate and scale.
         </p>
         
-        <h2 className="text-2xl font-bold mt-8 mb-4">My Journey</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">My Expertise</h2>
         <p className="mb-4">
-          With a background in computer science and years of hands-on experience, I've developed 
-          a deep understanding of both frontend and backend technologies. I believe in creating 
-          applications that are not only functional but also provide exceptional user experiences.
+          I specialize in Odoo ERP implementation, customization, and integrations, as well as modern web applications using Next.js, React, TypeScript, Node.js, and cloud-ready deployment architectures.
         </p>
         
         <h2 className="text-2xl font-bold mt-8 mb-4">What I Do</h2>
         <ul className="space-y-2 mb-6">
-          <li>• Build responsive web applications with Next.js and React</li>
-          <li>• Develop robust backend systems with Node.js and databases</li>
-          <li>• Create efficient, maintainable code with TypeScript</li>
-          <li>• Implement modern UI/UX designs with Tailwind CSS</li>
-          <li>• Deploy and scale applications on cloud platforms</li>
+          <li>• Odoo ERP Implementation & Customization</li>
+          <li>• Business Process Automation & Workflow Design</li>
+          <li>• Custom Odoo Module Development</li>
+          <li>• Full-Stack Web Applications with Next.js & React</li>
+          <li>• API Integrations & System Architecture</li>
+          <li>• ERP Deployment & Performance Optimization</li>
         </ul>
         
         <h2 className="text-2xl font-bold mt-8 mb-4">My Approach</h2>
         <p className="mb-6">
-          I focus on clean architecture, performance optimization, and accessibility. 
-          Every project is an opportunity to solve problems creatively and deliver value.
+          I focus on understanding business needs, designing efficient solutions, and delivering scalable systems that drive real value and operational efficiency.
         </p>
         
         <div className="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
-          <h3 className="text-xl font-bold mb-3 text-blue-800">Let's Connect!</h3>
+          <h3 className="text-xl font-bold mb-3 text-blue-800">Let's Build Together!</h3>
           <p className="text-blue-700">
-            I'm always open to discussing new projects, creative ideas, or opportunities
-            to be part of your vision.
+            Whether you need Odoo implementation, custom development, or a modern web application, I'm here to help transform your business challenges into technical solutions.
           </p>
         </div>
       </div>

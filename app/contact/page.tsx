@@ -26,7 +26,8 @@ export default function ContactPage() {
     <div className="max-w-2xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
       <p className="text-gray-600 mb-12">
-        Have a project in mind or want to collaborate? Send me a message and I'll get back to you as soon as possible.
+        Looking for Odoo implementation, custom module development, web app development, or technical consulting?
+        Let's work together to build powerful solutions for your business.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -113,11 +114,10 @@ export default function ContactPage() {
         </div>
       )}
 
-      {/* Direct Contact Info */}
       <div className="mt-12 pt-8 border-t border-gray-200">
         <h3 className="text-lg font-semibold mb-4">Direct Contact</h3>
         <p className="text-gray-600">
-          Email: <a href="mailto:contact@ilyasmohamed.com" className="text-blue-600">contact@ilyasmohamed.com</a>
+          Email: <a href="mailto:ilyaasmohib@gmail.com" className="text-blue-600">ilyaasmohib@gmail.com</a>
         </p>
       </div>
     </div>
